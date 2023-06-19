@@ -5,6 +5,8 @@ FROM jupyter/scipy-notebook
 # Get some karma ##
 MAINTAINER Florian Briegel, briegel@mpia.de
 
+LABEL org.opencontainers.image.source = "https://github.com/sdss/lvmjupyter"
+
 RUN pip3 install ipydatagrid
 RUN pip3 install jupyter-app-launcher
 
